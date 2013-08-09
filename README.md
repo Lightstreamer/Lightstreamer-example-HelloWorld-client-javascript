@@ -114,7 +114,7 @@ So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. W
 
 ## Ready to go ##
 
-Let's start our Lightstreamer Server, please be sure you have deployed the adapter set "HelloWorld", then open a browser window and go to: "http://localhost:8080/HelloWorld/"
+Let's start our Lightstreamer Server, please before make sure you have installed the "HelloWorld" Adapter having followed the steps in [this tutorial](), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
 
 Is it working? Hope so...
 
