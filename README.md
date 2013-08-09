@@ -56,7 +56,7 @@ The <b>data-source</b>=<b>"lightstreamer"</b> property binds a div element to Li
 
 Finally, let's add some JavaScript code to tie things together:
 
-```js
+```html
 <script>
   require(["LightstreamerClient", "Subscription", "StaticGrid"], function(LightstreamerClient, Subscription, StaticGrid) {
     var client = new LightstreamerClient(null, "HELLOWORLD");
