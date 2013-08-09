@@ -24,7 +24,7 @@ That said, how can we represent our very complex <b>Hello World</b> messages? Of
 
 First, [download and install Lightstreamer Colosseo](http://www.lightstreamer.com/download). After you see some of the pre-installed demos running, you will be sure that the Server is ready to host our application.<br>
 
-Now we need to develop two components: the HTML front-end (on the client side) detailed in this project, and the Data Adapter (on the server side) of which fully details you can find [here]().
+Now we need to develop two components: the HTML front-end (on the client side) detailed in this project, and the Data Adapter (on the server side) of which fully details you can find [here](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java).
 
 ## Creating the front-end ##
 
@@ -114,7 +114,7 @@ So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. W
 
 ## Ready to go ##
 
-Let's start our Lightstreamer Server, please before make sure you have deployed the "HELLOWORLD" Adapter having followed the steps in [this tutorial](), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
+Let's start our Lightstreamer Server, please before make sure you have deployed the "HELLOWORLD" Adapter having followed the steps in [this tutorial](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
 
 Is it working? Hope so...
 
@@ -132,7 +132,7 @@ Please [post to our support forums](forums.lightstreamer.com) any feedback or qu
 
 ## Lightstreamer Adapters needed by this demo client ##
 
-* To be add: [Lightstreamer "Hello World" Adapter for Java]()
+* [Lightstreamer "Hello World" Adapter for Java](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
 
 # Lightstreamer Compatibility Notes #
 
