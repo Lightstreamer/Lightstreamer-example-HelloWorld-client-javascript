@@ -2,7 +2,7 @@
 
 Lightstreamer is made up of a Server and a set of Client libraries. Lightstreamer's job is to push real-time data over the Web in both directions (from the server to the clients and from the clients to the server). To do that, it uses a set of techniques refined and tuned over the last 13 years, including HTTP Streaming, Comet, and WebSockets.<br>
 
-Let's see how to build a "Hello World" application with Lightstreamer. The client will be based on <b>HTML</b> and <b>JavaScript</b>, while the server-side Data Adapter will be based on <b>Java</b>.<br>
+Let's see how to build a "Hello World" application with Lightstreamer. The client will be based on <b>HTML</b> and <b>JavaScript</b>, while the server-side Data Adapter will be based on <b>Java</b>, but examples in <b>.NET</b> and in plain <b>TCP sockets</b> are also published.<br>
 
 This project focuses on the client, we will use the new JavaScript Client lib version 6, introduced with Lightstreamer Colosseo. We will start from scratch and with zero knowledge of the framework, introducing some terms and concepts while explaining the code.
 
@@ -133,6 +133,11 @@ Please [post to our support forums](forums.lightstreamer.com) any feedback or qu
 ## Lightstreamer Adapters needed by this demo client ##
 
 * [Lightstreamer "Hello World" Adapter for Java](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
+
+### Alternative implementations of the Adapter ###
+
+- [Lightstreamer "Hello World" Adapter for .NET](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-dotnet)
+- [Lightstreamer "Hello World" Adapter for Sockets](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-socket)
 
 # Lightstreamer Compatibility Notes #
 
