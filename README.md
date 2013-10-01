@@ -29,7 +29,7 @@ Now we need to develop two components: the HTML front-end (on the client side) d
 ## Creating the front-end ##
 
 The front-end of this oh-so-cool application will be a simple HTML page that displays the real-time data pushed by the Server. Here is the result:<br>
-![Result example](http://www.lightstreamer.com/docs/articles/JavaScript-Client_and_Java-Data-Adapter_Tutorial_Colosseo/lshello-ff.png)
+![Result example](example.png)
 
 we should include a couple of libraries; we need an <b>AMD loader</b> as the Lightstreamer JavaScript Client library is splitted in several modules. We'll use [RequireJS](http://requirejs.org/) as our AMD loader. We don't even need to download it, let's link it from [cdnjs](http://www.cdnjs.com/):
 
