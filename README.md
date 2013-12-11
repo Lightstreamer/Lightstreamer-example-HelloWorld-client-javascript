@@ -1,4 +1,4 @@
-# "Hello World" with Lightstreamer Colosseo #
+# Lightstreamer - "Hello World" Tutorial - HTML Client #
 
 Lightstreamer is made up of a Server and a set of Client libraries. Lightstreamer's job is to push real-time data over the Web in both directions (from the server to the clients and from the clients to the server). To do that, it uses a set of techniques refined and tuned over the last 13 years, including HTTP Streaming, Comet, and WebSockets.<br>
 
@@ -114,7 +114,7 @@ So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. W
 
 ## Ready to go ##
 
-Let's start our Lightstreamer Server, please before make sure you have deployed the "HELLOWORLD" Adapter having followed the steps in [this tutorial](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
+Let's start our Lightstreamer Server, please before make sure you have deployed the "HELLOWORLD" Adapter having followed the steps in [Lightstreamer - "Hello World" Tutorial - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
 
 Is it working? Hope so...
 
@@ -132,12 +132,12 @@ Please [post to our support forums](forums.lightstreamer.com) any feedback or qu
 
 ## Lightstreamer Adapters needed by this demo client ##
 
-* [Lightstreamer "Hello World" Adapter for Java](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
+* [Lightstreamer - "Hello World" Tutorial - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
 
 ### Alternative implementations of the Adapter ###
 
-- [Lightstreamer "Hello World" Adapter for .NET](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-dotnet)
-- [Lightstreamer "Hello World" Adapter for Sockets](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-socket)
+- [Lightstreamer - "Hello World" Tutorial - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-dotnet)
+- [Lightstreamer - "Hello World" Tutorial - TCP Socket Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-socket)
 
 # Lightstreamer Compatibility Notes #
 
