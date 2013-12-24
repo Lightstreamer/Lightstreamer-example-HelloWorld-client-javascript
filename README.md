@@ -1,4 +1,5 @@
 # Lightstreamer - "Hello World" Tutorial - HTML Client #
+<!-- START DESCRIPTION "Hello World" Tutorial -->
 
 Lightstreamer is made up of a Server and a set of Client libraries. Lightstreamer's job is to push real-time data over the Web in both directions (from the server to the clients and from the clients to the server). To do that, it uses a set of techniques refined and tuned over the last 13 years, including HTTP Streaming, Comet, and WebSockets.<br>
 
@@ -19,6 +20,7 @@ In the Lightstreamer framework, you subscribe to <b>Items</b>. An item is made u
 * In <b>finance market data dissemination</b>, an item often represents a stock quote. The item name would be, for example, "TIBX.O" (TIBCO Software Inc. on Nasdaq). Some fields would be: <i>TRDPRC_1, TRDTIM_1, BID,</i> and <i>ASK</i>.
 
 That said, how can we represent our very complex <b>Hello World</b> messages? Of course through an item... The item name will be <b>"greetings"</b>. It will have two fields: <i>message</i> and <i>timestamp</i>.
+<!-- END DESCRIPTION "Hello World" Tutorial -->
 
 ## Let's get started ##
 
@@ -131,8 +133,11 @@ Please [post to our support forums](forums.lightstreamer.com) any feedback or qu
 # See Also #
 
 ## Lightstreamer Adapters needed by this demo client ##
+<!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
+
+<!-- END RELATED_ENTRIES -->
 
 ### Alternative implementations of the Adapter ###
 
