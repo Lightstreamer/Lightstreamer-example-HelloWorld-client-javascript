@@ -128,6 +128,8 @@ But first, you should read the JavaScript Client Guide, available in the "/Light
 
 Many examples with full source code are available in the installation. 
 
+An online demonstration is hosted on our servers at: [http://demos.lightstreamer.com/HelloWorld](http://demos.lightstreamer.com/HelloWorld).<br>
+
 Please [post to our support forums](forums.lightstreamer.com) any feedback or question you might have. Thanks!
 
 # See Also #
