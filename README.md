@@ -7,11 +7,11 @@ Let's see how to build a "Hello World" application with Lightstreamer. The clien
 
 This project focuses on the client, we will use the new JavaScript Client lib version 6, introduced with Lightstreamer Colosseo. We will start from scratch and with zero knowledge of the framework, introducing some terms and concepts while explaining the code.
 
-## What do we want our application to do? ##
+## What Do We Want Our Application to Do? ##
 
 Let's keep the application very basic. We want to push the alternated strings "Hello" and "World", followed by the current timestamp, from the server to the browser. Yes, a very exciting application :-)
 
-## What data model should we use? ##
+## What Data Model Should We Use? ##
 
 In the Lightstreamer framework, you subscribe to <b>Items</b>. An item is made up of a number of fields whose values change over time. Here are some examples of possible items:
 
@@ -22,16 +22,16 @@ In the Lightstreamer framework, you subscribe to <b>Items</b>. An item is made u
 That said, how can we represent our very complex <b>Hello World</b> messages? Of course through an item... The item name will be <b>"greetings"</b>. It will have two fields: <i>message</i> and <i>timestamp</i>.
 <!-- END DESCRIPTION lightstreamer-example-helloworld-client-javascript -->
 
-## Let's get started ##
+## Let's Get Started ##
 
 First, [download and install Lightstreamer Colosseo](http://www.lightstreamer.com/download). After you see some of the pre-installed demos running, you will be sure that the Server is ready to host our application.<br>
 
 Now we need to develop two components: the HTML front-end (on the client side) detailed in this project, and the Data Adapter (on the server side) of which fully details you can find [here](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java).
 
-## Creating the front-end ##
+## Creating the Front-End ##
 
 The front-end of this oh-so-cool application will be a simple HTML page that displays the real-time data pushed by the Server. Here is the result:<br>
-![Result example](example.png)
+[![Result example](example_new.png)](http://demos.lightstreamer.com/HelloWorld/)
 
 we should include a couple of libraries; we need an <b>AMD loader</b> as the Lightstreamer JavaScript Client library is splitted in several modules. We'll use [RequireJS](http://requirejs.org/) as our AMD loader. We don't even need to download it, let's link it from [cdnjs](http://www.cdnjs.com/):
 
@@ -108,19 +108,19 @@ require(["LightstreamerClient", "StatusWidget", "Subscription", "StaticGrid"], f
 
 Good, we have a front-end!
 
-## Let's deploy the client ##
+## Let's Deploy the Client ##
 
 We only need to deploy our Web page and we are done. To make this fast, we decide to use the Lightstreamer Server as a Web server too, meaning both the static resources and the real-time data will be delivered by the Lightstreamer Server. But the typical production architecture has an external Web server (whatever it is) in addition to the Lightstreamer Server. Everything is downloaded from the Web server except for the real-time data, which comes from the Lightstreamer Server. This separation improves both flexibility (you are free to use whatever Web/application server you want) and performance (you can isolate the power-demanding real-time connections to a separate box, without impacting your existing Web infrastructure).
 
 So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. We name the HTML file created above as "index.htm" and put it in the "HelloWorld" folder. Finally, we have to deploy the JS library used by our page. Simply copy the lightstreamer.js file located in "/Lightstreamer/DOCS-SDKs/sdk_client_javascript/lib" into our HelloWorld folder.
 
-## Ready to go ##
+## Ready to Go ##
 
 Let's start our Lightstreamer Server, please before make sure you have deployed the "HELLOWORLD" Adapter having followed the steps in [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java), then open a browser window and go to: "http://localhost:8080/HelloWorld/"
 
 Is it working? Hope so...
 
-## Final notes ##
+## Final Notes ##
 
 This example is really very basic and exploits only a minor portion of the features offered by the Lightstreamer API. To delve a bit more into the API used above you can take a look at the online API references: [JavaScript Client API Reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html).
 
@@ -134,14 +134,14 @@ Please [post to our support forums](forums.lightstreamer.com) any feedback or qu
 
 # See Also #
 
-## Lightstreamer Adapters needed by this demo client ##
+## Lightstreamer Adapters Needed by This Demo Client ##
 <!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java)
 
 <!-- END RELATED_ENTRIES -->
 
-### Alternative implementations of the Adapter ###
+### Alternative Implementations of the Adapter ###
 
 - [Lightstreamer - "Hello World" Tutorial - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-dotnet)
 - [Lightstreamer - "Hello World" Tutorial - TCP Socket Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-socket)
