@@ -92,7 +92,7 @@ We can now configure the <b>Subscription</b> specifying the Subscription Mode to
 
 Finally, we put things together: we make the StaticGrid a <b>listener</b> of our Subscription and then we pass the Subscription to our <b>LightstreamerClient</b> so that it can actually do the subscription on the Lightstreamer Server.
 
-The full source code of the resulting page is shown in the index.htm file of this project. 
+The full source code of the resulting page is shown in the src/index.html file of this project. 
 
 Would you like to add a connection status indicator in your page? Lightstreamer provides one out of the box. Just add this line of code before client.connect():
 
@@ -112,7 +112,7 @@ Good, we have a front-end!
 
 We only need to deploy our Web page and we are done. To make this fast, we decide to use the Lightstreamer Server as a Web server too, meaning both the static resources and the real-time data will be delivered by the Lightstreamer Server. But the typical production architecture has an external Web server (whatever it is) in addition to the Lightstreamer Server. Everything is downloaded from the Web server except for the real-time data, which comes from the Lightstreamer Server. This separation improves both flexibility (you are free to use whatever Web/application server you want) and performance (you can isolate the power-demanding real-time connections to a separate box, without impacting your existing Web infrastructure).
 
-So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. We name the HTML file created above as "index.htm" and put it in the "HelloWorld" folder. Finally, we have to deploy the JS library used by our page. Simply copy the lightstreamer.js file located in "/Lightstreamer/DOCS-SDKs/sdk_client_javascript/lib" into our HelloWorld folder.
+So, let's create a "HelloWorld" folder under the "Lightstreamer/pages" folder. We name the HTML file created above as "index.html" and put it in the "HelloWorld" folder. Finally, we have to deploy the JS library used by our page. Simply copy the lightstreamer.js file located in "/Lightstreamer/DOCS-SDKs/sdk_client_javascript/lib" into our HelloWorld folder.
 
 ## Ready to Go ##
 
