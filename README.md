@@ -119,12 +119,8 @@ If you want to install a version of this demo pointing to your local Lightstream
 * Download this project.
 * Get the `lightstreamer.js` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download) located in `<LS_HOME>/DOCS-SDKs/sdk_client_javascript/lib` and put it in the `src` folder.
 * Deploy this demo on the Lightstreamer Server used as Web server: create the folders `<LS_HOME>/pages/HelloWorld` and copy here the contents of the `/src` folder of this project. *Note. If we use the Lightstreamer Server as a Web server, both the static resources and the real-time data will be delivered by the Lightstreamer Server. But the typical production architecture has an external Web server (whatever it is) in addition to the Lightstreamer Server. Everything is downloaded from the Web server except for the real-time data, which comes from the Lightstreamer Server. This separation improves both flexibility (you are free to use whatever Web/application server you want) and performance (you can isolate the power-demanding real-time connections to a separate box, without impacting your existing Web infrastructure).* 
-* The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. If you need to targeting a different Lightstreamer server please search in `index.html` this line:<BR/> `var client = new LightstreamerClient(null,"HELLOWORLD");`<BR/> and change it accordingly.
+* The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters and this client are launched on the same machine. If you need to targe a different Lightstreamer server please search in `index.html` this line:<BR/> `var client = new LightstreamerClient(null,"HELLOWORLD");`<BR/> and change it accordingly.
 * Open your browser and point it to: [http://localhost:8080/HelloWorld/](http://localhost:8080/HelloWorld/)
-
-
-
-Please [post to our support forums](forums.lightstreamer.com) any feedback or question you might have. Thanks!
 
 ## See Also
 
