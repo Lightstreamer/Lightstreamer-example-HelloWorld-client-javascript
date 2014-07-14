@@ -139,7 +139,7 @@ If you want to install a version of this demo pointing to your local Lightstream
  
 <!-- END RELATED_ENTRIES -->
 
-# Lightstreamer Compatibility Notes #
+## Lightstreamer Compatibility Notes
 
 - Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer.
 
