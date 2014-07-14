@@ -4,7 +4,7 @@ The demos of the "Hello World with Lightstreamer" series are very basic examples
 
 This project includes a simple web client front-end for the "Hello World" Tutorial.
 
-As example of [Lightstreamer Adapters Needed by This Client](), you may refer to the [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java).
+As example of [Lightstreamer Adapters Needed by This Client](https://github.com/Weswit/Lightstreamer-example-HelloWorld-client-javascript#lightstreamer-adapters-needed-by-this-client), you may refer to the [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Weswit/Lightstreamer-example-HelloWorld-adapter-java).
 
 ## Details
 Lightstreamer is made up of a Server and a set of Client libraries. Lightstreamer's job is to push real-time data over the Web in both directions (from the server to the clients and from the clients to the server). To do that, it uses a set of techniques refined and tuned over the last 13 years, including HTTP Streaming, Comet, and WebSockets.<br>
