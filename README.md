@@ -41,13 +41,13 @@ We should include a couple of libraries; we need an <b>AMD loader</b> as the Lig
 <script language="JavaScript" src ="http://cdnjs.cloudflare.com/ajax/libs/require.js/1.0.7/require.min.js"></script>
 ```
 
-Obviously, we also need to include the Lightstreamer library (which you can find in the "Lightstreamer/DOCS-SDKs/sdk_client_javascript/lib" folder of your Lightstreamer installation):
+Obviously, we also need to include the Lightstreamer library (which you can find in the "Lightstreamer/DOCS-SDKs/sdk_client_web_unified/lib" folder of your Lightstreamer installation):
 
 ```html
 <script language="JavaScript" src ="lightstreamer.js"></script>
 ```
 
-By the way, for the sake of simplicity, we include the full library, but you can generate a customized lightstreamer.js library containing only the classes you actually use. The generator is simply an HTML page available in the "Lightstreamer/DOCS-SDKs/sdk_client_javascript/tools" folder.
+By the way, for the sake of simplicity, we include the full library, but you can generate a customized lightstreamer.js library containing only the classes you actually use. The generator is simply an HTML page available in the "Lightstreamer/DOCS-SDKs/sdk_client_web_unified/lib" folder.
 
 Then, we can create two div elements that will host the pushed fields:
 
@@ -110,14 +110,14 @@ require(["LightstreamerClient", "StatusWidget", "Subscription", "StaticGrid"], f
 
 This example is really very basic and exploits only a minor portion of the features offered by the Lightstreamer API. To delve a bit more into the API used above, you can take a look at the online API references: [JavaScript Client API Reference](http://www.lightstreamer.com/docs/client_javascript_uni_api/index.html).
 
-But first, you should read the JavaScript Client Guide, available in the "/Lightstreamer/DOCS-SDKs/sdk_client_javascript/doc" folder of your Lightstreamer installation.
+But first, you should read the Web Client Guide, available in the "/Lightstreamer/DOCS-SDKs/sdk_client_web_unified/doc" folder of your Lightstreamer installation.
 
 
 ## Install
 If you want to install a version of this demo pointing to your local Lightstreamer Server, follow these steps:
 * As prerequisite, the [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-HelloWorld-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Download this project.
-* Get the `lightstreamer.js` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download) located in `<LS_HOME>/DOCS-SDKs/sdk_client_javascript/lib` and put it in the `src` folder.
+* Get the `lightstreamer.js` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download) located in `<LS_HOME>/DOCS-SDKs/sdk_client_web_unified/lib` and put it in the `src` folder.
 * Deploy this demo on the Lightstreamer Server used as Web server: create the folders `<LS_HOME>/pages/HelloWorld` and copy here the contents of the `/src` folder of this project. *Note. If we use the Lightstreamer Server as a Web server, both the static resources and the real-time data will be delivered by the Lightstreamer Server. But the typical production architecture has an external Web server (whatever it is), in addition to the Lightstreamer Server. Everything is downloaded from the Web server except for the real-time data, which comes from the Lightstreamer Server. This separation improves both flexibility (you are free to use whatever Web/application server you want) and performance (you can isolate the power-demanding real-time connections to a separate box, without impacting your existing Web infrastructure).* 
 * The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please search in `index.html` this line:<BR/> `var client = new LightstreamerClient(null,"HELLOWORLD");`<BR/> and change it accordingly.
 * Open your browser and point it to: [http://localhost:8080/HelloWorld/](http://localhost:8080/HelloWorld/)
