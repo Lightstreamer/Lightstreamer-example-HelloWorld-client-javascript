@@ -41,14 +41,14 @@ We should include a couple of libraries; we need an <b>AMD loader</b> as the Lig
 <script language="JavaScript" src ="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
 ```
 
-Obviously, we also need to include the Lightstreamer library (which you can get from [unpkg CDN](https://unpkg.com/lightstreamer-client-web/lightstreamer.js)):
+Obviously, we also need to include the Lightstreamer library (which you can get from [unpkg CDN](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js)):
 
 ```html
-<script language="JavaScript" src ="https://unpkg.com/lightstreamer-client-web/lightstreamer.js"></script>
+<script language="JavaScript" src ="https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js"></script>
 ```
 
 Alternatively, you can install the library from npm. See the [npm page](https://www.npmjs.com/package/lightstreamer-client-web) for further details. 
-By the way, for the sake of simplicity, we include the full library, but you can generate a customized lightstreamer.js library containing only the classes you actually use.
+By the way, for the sake of simplicity, we include the full library, but you can generate a customized lightstreamer.min.js library containing only the classes you actually use.
 See the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
 
 Then, we can create two div elements that will host the pushed fields:
@@ -119,7 +119,7 @@ But first, you should read the "[Web Client Guide.pdf](https://www.lightstreamer
 If you want to install a version of this demo pointing to your local Lightstreamer Server, follow these steps:
 * As prerequisite, the [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-HelloWorld-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
 * Download this project.
-* Get the `lightstreamer.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.js).
+* Get the `lightstreamer.min.js` file from [npm](https://www.npmjs.com/package/lightstreamer-client-web) or [unpkg](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js).
 * Deploy this demo on the Lightstreamer Server used as Web server: create the folders `<LS_HOME>/pages/HelloWorld` and copy here the contents of the `/src` folder of this project. *Note. If we use the Lightstreamer Server as a Web server, both the static resources and the real-time data will be delivered by the Lightstreamer Server. But the typical production architecture has an external Web server (whatever it is), in addition to the Lightstreamer Server. Everything is downloaded from the Web server except for the real-time data, which comes from the Lightstreamer Server. This separation improves both flexibility (you are free to use whatever Web/application server you want) and performance (you can isolate the power-demanding real-time connections to a separate box, without impacting your existing Web infrastructure).* 
 * The client demo configuration assumes that Lightstreamer Server, Lightstreamer Adapters, and this client are launched on the same machine. If you need to target a different Lightstreamer server, please search in `index.html` this line:<BR/> `var client = new LightstreamerClient(null,"HELLOWORLD");`<BR/> and change it accordingly.
 * Open your browser and point it to: [http://localhost:8080/HelloWorld/](http://localhost:8080/HelloWorld/)
@@ -139,7 +139,7 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 ## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer.
+- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer (installation instructions for version 8.0 or newer).
 
 ## Final Notes
 For more information, please [visit our website](http://www.lightstreamer.com/) and [post to our support forums](http://forums.lightstreamer.com) any feedback or questions you might have. Thanks!
