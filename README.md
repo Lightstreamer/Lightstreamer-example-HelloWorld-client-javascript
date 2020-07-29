@@ -112,7 +112,7 @@ require(["LightstreamerClient", "StatusWidget", "Subscription", "StaticGrid"], f
 
 This example is really very basic and exploits only a minor portion of the features offered by the Lightstreamer API. To delve a bit more into the API used above, you can take a look at the online API references: [JavaScript Client API Reference](https://lightstreamer.com/api/ls-web-client/latest/).
 
-But first, you should read the "[Web Client Guide.pdf](https://www.lightstreamer.com/docs/client_javascript_base/Web%20Client%20Guide.pdf)" document, also available in your Lightstreamer installation.
+But first, you should read the "[Web Client Guide.pdf](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript/blob/master/docs/WebClientGuide.adoc)" document, available in the library project.
 
 
 ## Install
