@@ -32,7 +32,9 @@
 
     <script>
       require(["LightstreamerClient","Subscription","StaticGrid"],function(LightstreamerClient,Subscription,StaticGrid) {
-        var client = new LightstreamerClient(null,"HELLOWORLD");
+        var protocolToUse = document.location.protocol != "file:" ? document.location.protocol : "http:";
+        var portToUse = document.location.protocol == "https:" ? "443" : "8080";
+        var client = new LightstreamerClient(protocolToUse+"//localhost:"+portToUse,"HELLOWORLD");
         client.connect();
          
         var grid = new StaticGrid("hellogrid",true);
