@@ -48,8 +48,6 @@ Obviously, we also need to include the Lightstreamer library (which you can get 
 ```
 
 Alternatively, you can install the library from npm. See the [npm page](https://www.npmjs.com/package/lightstreamer-client-web) for further details. 
-By the way, for the sake of simplicity, we include the full library, but you can generate a customized lightstreamer.min.js library containing only the classes you actually use.
-See the build instructions on the [GitHub page](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript#building).
 
 Then, we can create two div elements that will host the pushed fields:
 
@@ -112,9 +110,6 @@ require(["LightstreamerClient", "StatusWidget", "Subscription", "StaticGrid"], f
 
 This example is really very basic and exploits only a minor portion of the features offered by the Lightstreamer API. To delve a bit more into the API used above, you can take a look at the online API references: [JavaScript Client API Reference](https://lightstreamer.com/api/ls-web-client/latest/).
 
-But first, you should read the "[Web Client Guide](https://github.com/Lightstreamer/Lightstreamer-lib-client-javascript/blob/master/docs/WebClientGuide.adoc)" document, available in the library project.
-
-
 ## Install
 If you want to install a version of this demo pointing to your local Lightstreamer Server, follow these steps:
 * As prerequisite, the [Lightstreamer - "Hello World" Tutorial - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-HelloWorld-adapter-java) has to be deployed on your local Lightstreamer Server instance. Please check out that project and follow the installation instructions provided with it.
@@ -139,7 +134,7 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 ## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer (installation instructions for version 8.0 or newer).
+- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer.
 
 ## Final Notes
 For more information, please [visit our website](http://www.lightstreamer.com/) and [post to our support forums](http://forums.lightstreamer.com) any feedback or questions you might have. Thanks!
