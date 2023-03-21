@@ -134,7 +134,7 @@ If you want to install a version of this demo pointing to your local Lightstream
 
 ## Lightstreamer Compatibility Notes
 
-- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer.
+- Compatible with Lightstreamer JavaScript Client Library version 6.0 or newer (installation instructions for version 8.0 or newer).
 
 ## Final Notes
 For more information, please [visit our website](http://www.lightstreamer.com/) and [post to our support forums](http://forums.lightstreamer.com) any feedback or questions you might have. Thanks!
