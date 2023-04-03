@@ -38,13 +38,13 @@ That said, how can we represent our very complex <b>Hello World</b> messages? Of
 We should include a couple of libraries; we need an <b>AMD loader</b> as the Lightstreamer JavaScript Client library is split in several modules. We'll use [RequireJS](http://requirejs.org/) as our AMD loader. We don't even need to download it, let's link it from [cdnjs](http://www.cdnjs.com/):
 
 ```html
-<script language="JavaScript" src ="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+<script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
 ```
 
 Obviously, we also need to include the Lightstreamer library (which you can get from [unpkg CDN](https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js)):
 
 ```html
-<script language="JavaScript" src ="https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js"></script>
+<script language="JavaScript" src="https://unpkg.com/lightstreamer-client-web/lightstreamer.min.js"></script>
 ```
 
 Alternatively, you can install the library from npm. See the [npm page](https://www.npmjs.com/package/lightstreamer-client-web) for further details. 
